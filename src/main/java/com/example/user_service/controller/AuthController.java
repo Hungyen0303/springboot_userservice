@@ -18,7 +18,7 @@ public class AuthController {
 
     @PostMapping
     public ResponseEntity<Boolean> login(@RequestBody Credential credential) {
-        return ResponseEntity.ok(credentialService.login(credential));
+            return ResponseEntity.ok(credentialService.login(credential));
     }
 
     @PostMapping("/register")
